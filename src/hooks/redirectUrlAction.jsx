@@ -1,7 +1,20 @@
 export function RedirectUrlAction() {
   function redirectToIG() {
     const username = "tamindo_project";
-    window.open(`https://www.instagram.com/${username}`, "_blank");
+    const appUrl = `instagram://user?username=${username}`;
+    const webUrl = `https://www.instagram.com/${username}`;
+
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+    if (isMobile) {
+      window.location.href = appUrl;
+
+      setTimeout(() => {
+        window.open(webUrl, "_blank");
+      }, 500);
+    } else {
+      window.open(webUrl, "_blank");
+    }
   }
 
   function redirectToWA() {
