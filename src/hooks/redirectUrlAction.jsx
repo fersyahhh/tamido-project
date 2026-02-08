@@ -1,7 +1,7 @@
 export function RedirectUrlAction() {
   function redirectToIG() {
     const username = "tamindo_project";
-    window.open(`https://www.instagram.com/${username}`, "_blank");
+    window.location.href(`https://www.instagram.com/${username}`, "_blank");
   }
 
   function redirectToWA() {

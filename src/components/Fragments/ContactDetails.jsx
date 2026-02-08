@@ -41,7 +41,7 @@ const ContactDetails = () => {
           <h1 className="font-inter text-charcoal mt-2 text-sm md:text-base">
             Jl. Parung Jaya
           </h1>
-          <h1 className="font-inter text-charcoal mt-1 text-sm md:text-base">
+          <h1 className="font-inter text-charcoal mt-1 text-sm md:text-base max-w-[80%]">
             No.42, Karang Tengah Tangerang
           </h1>
         </div>
