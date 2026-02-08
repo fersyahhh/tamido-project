@@ -1,5 +1,5 @@
 export function RedirectUrlAction() {
-  function redirectToIG() {
+  const redirectToIG = () => {
     const username = "tamindo_project";
     const appUrl = `instagram://user?username=${username}`;
     const webUrl = `https://www.instagram.com/${username}`;
@@ -10,12 +10,12 @@ export function RedirectUrlAction() {
       window.location.href = appUrl;
 
       setTimeout(() => {
-        window.open(webUrl, "_blank");
-      }, 500);
+        window.location.href = webUrl;
+      }, 2000);
     } else {
       window.open(webUrl, "_blank");
     }
-  }
+  };
 
   function redirectToWA() {
     const phone = "6287885718594";
