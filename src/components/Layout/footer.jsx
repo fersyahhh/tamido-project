@@ -1,8 +1,5 @@
-import { RedirectUrlAction } from "../../hooks/redirectUrlAction";
-
 const Footer = () => {
   const year = new Date().getFullYear();
-  const { redirectToIG } = RedirectUrlAction();
 
   return (
     <footer className="bg-charcoal">
@@ -16,7 +13,9 @@ const Footer = () => {
             that reflect the soul of its inhabitants.
           </p>
           <a
-            onClick={redirectToIG}
+            href="https://www.instagram.com/tamindo_project/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="font-inter text-xs font-bold tracking-[0.2rem] text-white uppercase hover:text-white/80"
           >
             Instagram
