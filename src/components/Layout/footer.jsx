@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container px-8 py-20">
         <div>
           <h1 className="font-montserrat text-3xl font-bold text-white uppercase md:text-4xl">
-            Tamindo
+            Tamindo_Project
           </h1>
           <p className="text-light/50 font-inter mt-6 mb-8 text-sm md:max-w-[50%] md:text-base">
             A story-driven interior design practice dedicated to creating spaces
